@@ -39,7 +39,7 @@ class App extends React.Component {
     const newList = this.state.employees.filter((employees) => {
       //merge data if employee exists 
       //employee or employees? 
-      let merge = Object.merge(employees).join('').toLowerCase();
+      let merge = Object.values(employees).join('').toLowerCase();
       return merge.indexOf(filter.toLowerCase());
     });
     //update newList
