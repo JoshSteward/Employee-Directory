@@ -12,7 +12,7 @@ class App extends React.Component {
   state = { employees: [], search: ''};
 
   componentDidMount() {
-    API.search().then((res) => {
+    API.getEmployees().then((res) => {
       //console.log(res) to see what output is 
       console.log(res);
       this.setState({
