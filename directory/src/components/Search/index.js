@@ -4,12 +4,9 @@ function Search(props) {
     return (
         <form>
             <div style = {{display:"flex"}}>
-                <label>
-                    Search
-                </label>
                 <input
                 onChange={props.handleInputChange}
-                value={props.value}
+                //value={props.value}
                 name="Search"
                 type="text"
                 placeholder="Search Employees"

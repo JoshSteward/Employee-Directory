@@ -21,7 +21,7 @@ class App extends React.Component {
           lastName: e.name.last,
           email: e.email,
           phone: e.phone,
-          picture: e.picture.small,
+          picture: e.picture.large,
           key: i,
         })),
       });
@@ -44,6 +44,8 @@ class App extends React.Component {
     });
     //update newList
     this.setState({employees: newList});
+    //newList coming out as 0
+    console.log("Check two ", + newList);
   };
 
   handleInputChange = (e) => {
@@ -57,6 +59,7 @@ class App extends React.Component {
     e.preventDefault();
     console.log("Clicked", this.state.search, e);
     this.employeeSearch(this.state.search);
+    console.log(this.state.search);
   };
 
   //render data on page 
