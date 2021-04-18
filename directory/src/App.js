@@ -55,6 +55,7 @@ class App extends React.Component {
     console.log(this.state.search);
   };
 
+  //issue potentially here for not laoding search 
   handleFormSubmit = (e) => {
     e.preventDefault();
     console.log("Clicked", this.state.search, e);
