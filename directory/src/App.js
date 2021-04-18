@@ -55,7 +55,50 @@ class App extends React.Component {
   };
 
   //render data on page 
-  
+  render() {
+    return(
+      <wrapper>
+        <div className = "container">
+          <div className = "row">
+            <Col size = "md-3">
+              <h1>Employee Directory</h1>
+              <Search
+                value = {this.state.search}
+                handleInputChange={this.handleInputChange}
+                handleFormSubmit={this.handleFormSubmit}
+              />
+            </Col>
+          </div>
+
+          <div className = "row">
+            <Col size = "md-10">
+              <table className = "table">
+                <thead>
+                  <tr>
+                    <th>Photo</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                  </tr>
+                </thead>
+                {[...this.state.employees].map((item) =>(
+                  <Card
+                  picture = {item.picture}
+                  firstName = {item.firstName}
+                  lastName = {item.lastName}
+                  email = {item.email}
+                  phone = {item.phone}
+                  key = {item.key}
+                  />
+                ))}
+              </table>
+            </Col>
+          </div>
+        </div> 
+      </wrapper>
+    );
+  }
 }
 
 
