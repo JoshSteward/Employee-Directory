@@ -1,0 +1,5 @@
+.Wrapper {
+    padding:10px;
+    overflow: auto;
+    display: flex;
+}

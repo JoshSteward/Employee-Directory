@@ -1,6 +1,11 @@
 import './App.css'; 
-
+import Wrapper from "./components/Wrapper";
+import Col from "./components/Col";
+import Card from "./components/Card";
+//import Footer from "./components/Footer";
+import Search from "./components/Search";
 import API from './utils/API';
+import React from 'react';
 
 
 class App extends React.Component {
@@ -33,8 +38,9 @@ class App extends React.Component {
   employeeSearch = (filter) => {
     const newList = this.state.employees.filter((employees) => {
       //merge data if employee exists 
-      let merge = Object.merge(employee).join('').toLowerCase();
-      return values.indexOf(filter.toLowerCase());
+      //employee or employees? 
+      let merge = Object.merge(employees).join('').toLowerCase();
+      return merge.indexOf(filter.toLowerCase());
     });
     //update newList
     this.setState({employees: newList});
@@ -56,7 +62,7 @@ class App extends React.Component {
   //render data on page 
   render() {
     return(
-      <wrapper>
+      <Wrapper>
         <div className = "container">
           <div className = "row">
             <Col size = "md-3">
@@ -95,7 +101,7 @@ class App extends React.Component {
             </Col>
           </div>
         </div> 
-      </wrapper>
+      </Wrapper>
     );
   }
 }
