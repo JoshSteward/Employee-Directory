@@ -51,7 +51,7 @@ class App extends React.Component {
 
   handleInputChange = (e) => {
     this.setState({
-      [e.target.name]: e.target.value,
+      search: e.target.value,
     });
     console.log(this.state.search);
   };
