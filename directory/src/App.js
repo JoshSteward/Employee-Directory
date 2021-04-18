@@ -35,6 +35,7 @@ class App extends React.Component {
   }
 
   //create function to search through employees
+  //search function not working
   employeeSearch = (filter) => {
     const newList = this.state.employees.filter((employees) => {
       //merge data if employee exists 
