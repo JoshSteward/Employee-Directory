@@ -3,7 +3,10 @@
 
 [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/shields.io.svg)](http://shields.io/)
 
-## Descritption ##
+Deployed link: 
+https://joshsteward.github.io/Employee-Directory/
+
+## Description ##
 
 This application allows the user to view and sort through their employee directory  
 
@@ -47,9 +50,8 @@ stewardjosh10@gmail.com
 
 ## Repository 
 
-https://github.com/JoshSteward/Employee-Directory
+https://joshsteward.github.io/Employee-Directory/
 <br>
-https://dashboard.heroku.com/apps/aqueous-fortress-43110 - Heroku not yet linked to database
 
 ## Github
 
